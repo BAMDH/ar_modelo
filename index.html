@@ -17,26 +17,29 @@
     model-viewer {
       width: 100vw;
       height: 100vh;
+      background: transparent;
     }
   </style>
 </head>
+
 <body>
 
 <model-viewer
   src="modelo.glb"
 
   ar
-  ar-modes="scene-viewer webxr quick-look"
+  ar-modes="scene-viewer"
 
   camera-controls
   auto-rotate
 
-  shadow-intensity="1"
-  exposure="1"
-
   environment-image="neutral"
 
-  ios-src="modelo.usdz">
+  shadow-intensity="1"
+
+  ar-scale="fixed"
+
+  ar-placement="floor">
 
 </model-viewer>
 
